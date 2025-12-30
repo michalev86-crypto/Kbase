@@ -1,0 +1,24 @@
+// Do any local configuration here
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+// include "/etc/bind/zones.rfc1918";
+
+//zone "levi.co" {
+//    type master;
+//    file "/etc/bind/zones/db.levi.co"; // zone file path
+//    allow-transfer { 192.168.1.2; };     // Replace with actual secondary DNS IP
+//};
+
+zone "192.168.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168";  // 192.168.0.0/16 reverse zone
+    allow-transfer { 192.168.1.2; };     // Replace with actual secondary DNS IP
+};
+
+// create local adress levipi.local
+
+zone "levi.pi" {
+    type master;
+    file "/etc/bind/zones/db.pi";
+};

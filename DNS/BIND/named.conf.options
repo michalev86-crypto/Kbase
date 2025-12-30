@@ -1,0 +1,44 @@
+acl localclients {
+    10.0.8.0/24;    //VPN
+    10.0.0.0/16;
+    192.168.1.0/24;
+    localhost;
+    localnets;
+    127.0.0.1;
+};
+
+options {
+    directory "/var/cache/bind";
+
+    recursion yes;
+    allow-query { localclients; };
+    allow-recursion {localclients; };
+
+    // DNSSEC (can be disabled if not needed)
+    dnssec-validation auto;
+    // dnssec-enable yes;  <-- deprecated in newer versions
+
+    auth-nxdomain no;    # conform to RFC1035
+    max-cache-size 500M;
+
+    // Listen on all IPv4 interfaces
+    listen-on { any; };
+    // Listen on all IPv6 interfaces
+    listen-on-v6 { none; };
+
+    // Forwarding upstream DNS
+    forwarders {
+        80.178.124.77;
+        82.102.147.34;
+        8.8.8.8;
+    };
+};
+
+logging {
+    channel query_log {
+        file "/var/log/named/query.log";
+        severity info;
+        print-time yes;
+    };
+    category queries { query_log; };
+};

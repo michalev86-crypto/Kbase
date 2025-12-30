@@ -1,0 +1,15 @@
+$TTL 604800
+@   IN  SOA ns1.levi.pi. admin.levi.pi. (
+            2025100205 ; Serial
+            604800     ; Refresh
+            86400      ; Retry
+            2419200    ; Expire
+            604800 )   ; Negative Cache TTL
+
+; Name servers
+    IN  NS  ns1.levi.pi.
+
+; A Records
+ns1     IN  A   192.168.1.10
+@    IN  A   192.168.1.10
+levi.stg     IN    A    192.168.1.20
