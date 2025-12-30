@@ -1,33 +1,44 @@
-#!/bin/bash
-echo -e - alow spacial carecters like \n
+# Linux Basics: File Management & Inspection
 
-file managment:
-	rm -remove
-	rm -rf -remove recursiv including sub folders
-	mv - move file
-	cp - copy
-	touch - update time stamp or create if not exists
-Reading files:
-cat (file name)
+### Echo
+**`echo -e`** Allows the use of special characters (like `\n` for a new line).
 
-less (file name)
-	p50 - jump to 50% of the text
-	= show corrent loaction
-	-N show row numbers
-	/(text) - forward search for (text)
-	?(text) back search for (text)
-	&pattern          *  Display only matching lines.
-	n - find next
+---
 
-wc - word count
+### File Management
+* **`rm`**: Remove files.
+* **`rm -rf`**: Remove recursively and forcefully (includes subfolders).
+* **`mv`**: Move or rename a file/folder.
+* **`cp`**: Copy a file/folder.
+* **`touch`**: Update a timestamp or create a new file if it doesn't exist.
 
-wc file.txt
-	wc -l (file.txt) number of lines
-	wc -w (file.txt) number of words
-	wc -c (file.txt) number of bytes
-	(wc file.txt = wc -lwc file.txt by defoult!)
+---
 
-du -disk usage  will show all files and folders with file size
-	-s summery (or just the sum of all)
-	-h will show more readble for humens with k ,mb. gb etc..
+### Reading Files
+* **`cat <filename>`**: Displays the entire content of a file.
+* **`less <filename>`**: Opens a file for interactive reading.
+    * `p50`: Jump to 50% of the text.
+    * `=`: Show current location/line info.
+    * `-N`: Show row numbers.
+    * `/<text>`: Search forward for text.
+    * `?<text>`: Search backward for text.
+    * `&pattern`: Display only lines matching the pattern.
+    * `n`: Find next match.
 
+---
+
+### WC (Word Count)
+Used to count lines, words, and bytes. Default behavior is `wc -lwc`.
+
+| Command | Description |
+| :--- | :--- |
+| **`wc -l`** | Count number of lines |
+| **`wc -w`** | Count number of words |
+| **`wc -c`** | Count number of bytes |
+
+---
+
+### DU (Disk Usage)
+Shows the size of files and folders.
+* **`du -s`**: Summary (shows only the total for the directory).
+* **`du -h`**: Human-readable format (shows sizes in KB, MB, GB).
