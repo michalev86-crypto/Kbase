@@ -1,8 +1,14 @@
-# Kbase
-Linux commands
+# Linux Knowledge Base
+## Modules
+* [System Info & I/O](system_info.md)
+* [File System Hierarchy (FHS)](fhs.md)
+* [User & Group Management](users.md)
+* [Permissions & Special Bits](permissions.md)
+* [Processes & Signals](processes.md)
+* [Job Control](jobs.md)
+* [Package Management](package_management.md)
+* [Networking](networking.md)
 
-* [file meanegement, less, wc , du, echo](basics.md)
-* [streams and stdout_stderr, pipes, tee](std_stream_tee_pipes.md)
-* [sort, uniq find duplicates, replace charecters, filters, cut , sed(replace lines) ](strings_grep_cut.md)
-* [shell variebles, env, path, alias, configure shell, set, shopt, ps1, bash behavior, dinemic input & outpu](envirment_variebles.md)
-* [files, simlinks, hardlinks, inodes](files_sim_hard_links.md)
+## Basic Commands
+* [Basics](basics.md)
+* [Streams & Pipes](std_stream_tee_pipes.md)
