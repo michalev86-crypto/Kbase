@@ -1,0 +1,19 @@
+
+config wifi-device 'radio0'
+        option type 'mac80211'
+        option path 'platform/soc/fe300000.mmcnr/mmc_host/mmc1/mmc1:0001/mmc1:0001:1'
+        option band '5g'
+        option channel '36'
+        option htmode 'VHT20'
+        option hwmode '11a'
+        option country 'IL'
+        option cell_density '0'
+
+config wifi-iface 'default_radio0'
+        option device 'radio0'
+        option network 'lan'
+        option mode 'ap'
+        option ssid 'LeviWrt'
+        option encryption 'psk2'
+        option key 'WIFI_PASSWORD'
+

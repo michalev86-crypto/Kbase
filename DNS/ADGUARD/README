@@ -1,0 +1,2 @@
+DNS bind configuration when adguard is in charge of outer dns resolving and bind is used only for priver network
+Zones are same as the original DNS no changes
