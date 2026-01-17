@@ -8,10 +8,10 @@ auto raid project
 
 How to install
 create files:
-    * `/usr/local/bin/raid-watchdog.sh`
-    * `/etc/systemd/system/raid-watchdog.service`
-    * `/etc/systemd/system/raid-watchdog.timer`
-    * `/var/log/raid-watchdog.log`
+    * `/usr/local/bin/raid-watchdog.sh`  
+    * `/etc/systemd/system/raid-watchdog.service`  
+    * `/etc/systemd/system/raid-watchdog.timer`  
+    * `/var/log/raid-watchdog.log`  
 
 2. Set permissions:
 	sudo chmod +x /usr/local/bin/raid-watchdog.sh
