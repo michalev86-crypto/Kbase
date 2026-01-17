@@ -7,12 +7,12 @@ auto raid project
 * [systemd_timer](raid-watchdog.timer)
 
 How to install
+create files:
+    * `/usr/local/bin/raid-watchdog.sh`
+    * `/etc/systemd/system/raid-watchdog.service`
+    * `/etc/systemd/system/raid-watchdog.timer`
+    * `/var/log/raid-watchdog.log`
 
-1. create files:
-	Path: /usr/local/bin/raid-watchdog.sh
-	Path:/etc/systemd/system/raid-watchdog.service
-	Path: /etc/systemd/system/raid-watchdog.timer
-	Path: /var/log/raid-watchdog.log
 2. Set permissions:
 	sudo chmod +x /usr/local/bin/raid-watchdog.sh
 	sudo chmod 664 /var/log/raid-watchdog.log
