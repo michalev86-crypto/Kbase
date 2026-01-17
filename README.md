@@ -5,3 +5,4 @@ my knowlage base page
 * [DNS_BIND9](DNS/)
 * [VPN](VPN/)
 * [OPENWRT](Open_Wrt/README.md)
+* [Auto Raid fix script](autoraid/README.md)
