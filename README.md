@@ -6,3 +6,4 @@ my knowlage base page
 * [VPN](VPN/)
 * [OPENWRT](Open_Wrt/README.md)
 * [Auto Raid fix script](autoraid/README.md)
+* [immiach_app_with_folder_creator_on_ssd_and_hdd_raid](Apps/Immich)
