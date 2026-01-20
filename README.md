@@ -1,9 +1,10 @@
-# Kbase
-my knowlage base page
+# Knowledge Base
+My personal knowledge base.
 
-* [Linux usefull commands and Knowlage](linux_commands/README.md)
-* [DNS_BIND9](DNS/)
+* [Workaround: Run Antigravity IDE on Raspberry Pi (WSL + SSHFS)](Connect_Antigravity_to_Rpi/antigravity-ide-raspberry-pi-wsl-bridge.md)
+* [Linux Useful Commands and Knowledge](linux_commands/README.md)
+* [DNS (BIND9)](DNS/)
 * [VPN](VPN/)
-* [OPENWRT](Open_Wrt/README.md)
-* [Auto Raid fix script](autoraid/README.md)
-* [immiach_app_with_folder_creator_on_ssd_and_hdd_raid](Apps/Immich)
+* [OpenWrt](Open_Wrt/README.md)
+* [Auto Raid Fix Script](autoraid/README.md)
+* [Immich App on RAID (Folder Creator)](Apps/Immich)
