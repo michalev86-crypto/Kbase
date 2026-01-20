@@ -1,21 +1,20 @@
 # Connect Antigravity to RPI
-#Antigravity Pi-Bridge Guide (WSL Edition)
-#About the Project
-#This project provides a workaround for developers using the Antigravity IDE on Raspberry Pi hardware.
-#Because many Raspberry Pi CPUs (ARM) lack the hardware encryption (AES/AVX) required by modern AI agents, the agent crashes during initialization.
-#By using Windows Subsystem for Linux (WSL) as a "Bridge," this setup allows the AI's "brain" to run on your powerful Windows CPU while the "hands" (file edits and terminal commands) operate directly on the Raspberry Pi via an SSHFS mount.
 
-Prerequisites
+## Antigravity Pi-Bridge Guide (WSL Edition)
+
+### About the Project
+This project provides a workaround for developers using the Antigravity IDE on Raspberry Pi hardware. 
+
+Because many Raspberry Pi CPUs (ARM) lack the hardware encryption (AES/AVX) required by modern AI agents, the agent crashes during initialization. By using Windows Subsystem for Linux (WSL) as a "Bridge," this setup allows the AI's "brain" to run on your powerful Windows CPU while the "hands" (file edits and terminal commands) operate directly on the Raspberry Pi via an SSHFS mount.
+
+---
+
+## Prerequisites
 Before starting, ensure you have:
-
-Windows 11 with Administrative privileges.
-
-Raspberry Pi (running Raspberry Pi OS/Ubuntu) on the same local network or vpn running.
-
-Antigravity IDE installed on Windows.
-
-OpenSSH installed on both machines.
-
+* Windows 11 with Administrative privileges.
+* Raspberry Pi (running Raspberry Pi OS/Ubuntu) on the same local network or VPN running.
+* Antigravity IDE installed on Windows.
+* OpenSSH installed on both machines.
 ## 1. Install WSL on Windows
 
 1. Right-click the **Start button** and select **Terminal (Admin)** or **PowerShell (Admin)**.
